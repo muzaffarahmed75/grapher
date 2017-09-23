@@ -200,8 +200,8 @@ while 1:
 
 root3 = Tk()
 root3.resizable(width=False, height=False)
-graph1 = Grid(root3, 800, 600, 25, 0)
+graph1 = Grid(root3, ornt[0], ornt[1], 25, 0)
 graph1.axis(a.org[0], a.org[1])
-graph1.label(a.xmin, 25, a.scx, a.ymin, 25, a.scy, a.org, 800, 600)
-graph1.plot(xl, yl, a.scx, a.scy, 25, 600, a.org)
+graph1.label(a.xmin, 25, a.scx, a.ymin, 25, a.scy, a.org, ornt[0], ornt[1])
+graph1.plot(xl, yl, a.scx, a.scy, 25, ornt[1], a.org)
 root3.mainloop()
